@@ -45,5 +45,5 @@ def receiveData(ws):
     confidence_score = prediction[0][index]
     print('Class:', class_name, end='')
     print('Confidence score:', confidence_score)
-    if confidence_score > 0.8:
+    if confidence_score > 0.9:
         ws.send(class_name)
